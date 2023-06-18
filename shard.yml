@@ -1,0 +1,23 @@
+name: travelsapi
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  travelsapi:
+    main: src/travelsapi.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  jennifer:
+    github: imdrasil/jennifer.cr
+    version: "= 0.12.0"
+  pg:
+    github: will/crystal-pg
+    version: "= 0.26.0"
+
+crystal: 1.8.2
+
+license: MIT
