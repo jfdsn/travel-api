@@ -1,0 +1,10 @@
+
+default: &default
+  host: localhost
+  user: test
+  password: test
+  adapter: postgres
+
+development:
+  <<: *default
+  db: travels_api_development

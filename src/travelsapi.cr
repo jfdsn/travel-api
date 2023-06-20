@@ -1,6 +1,9 @@
 # TODO: Write documentation for `Travelsapi`
+require "kemal"
+require "./routes/routes.cr"
+
 module Travelsapi
   VERSION = "0.1.0"
 
-  # TODO: Put your code here
+  Kemal.run
 end
