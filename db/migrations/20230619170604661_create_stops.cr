@@ -4,7 +4,6 @@ class CreateStops < Jennifer::Migration::Base
     create_table :stops do |t|
       t.integer :travel_stops, {:array => true}
 
-      t.timestamps
     end
   end
 

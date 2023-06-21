@@ -1,23 +1,28 @@
+require "kemal"
+require "../controllers/controller.cr"
+require "json"
+require "../../sam.cr"
+
 module Routes
     def self.define_routes
         get "/travel_plans" do |env|
-            "Retorna todos planos e verifica params de otimização/expandir"
+            Controller.getTravelPlans(env)
         end
 
         get "/travel_plans/:id" do |env|
-            "Retorna o plano do id informado e verifica params de otimização/expandir"
+            Controller.getTravelPlanById(env)
         end
 
-        post "/travel_plans" do |env|
-            "Adiciona um plano novo baseado no array travel_stops enviado"
+        post "/travel_plans" do |env|   
+            Controller.createTravelPlan(env)
         end
 
         put "/travel_plans/:id" do |env|
-            "Modifica o plano do id informado baseado no array travel_stops enviado"
+            Controller.updateTravelPlan(env)
         end
 
         delete "/travel_plans/:id" do |env|
-            "Deleta o plano de id informado"
+            Controller.deleteTravelPlan(env)
         end
     end
 end

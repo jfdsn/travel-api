@@ -1,5 +1,4 @@
 # TODO: Write documentation for `Travelsapi`
-require "kemal"
 require "./routes/routes.cr"
 
 module Travelsapi

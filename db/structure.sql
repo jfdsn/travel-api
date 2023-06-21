@@ -60,9 +60,7 @@ ALTER SEQUENCE public.migration_versions_id_seq OWNED BY public.migration_versio
 
 CREATE TABLE public.stops (
     id integer NOT NULL,
-    travel_stops integer[],
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    travel_stops integer[]
 );
 
 
