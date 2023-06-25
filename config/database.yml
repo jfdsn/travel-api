@@ -1,4 +1,4 @@
-
+#Database configuration
 default: &default
   host: localhost
   user: test
