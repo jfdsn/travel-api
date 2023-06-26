@@ -1,4 +1,5 @@
-require "http"
+require "http/client"
+require "json"
 
 class Location
     include JSON::Serializable
@@ -11,6 +12,8 @@ class Location
     property created : String
 end
 
+#Realiza a consulta na API Rick and Morty baseado no array de int32 travel_stops.
+#Retorna um Array(Location) com as informações necessárias para expandir e otimizar o travel plan.
 class RickNMortyService
     # Função para consultar os dados na API externa
     def self.consult(travel_stops : Array(Int32)) : Array(Location) 

@@ -2,8 +2,9 @@ require "json"
 require "./rickNMortyService.cr"
 require "./optimizeService.cr"
 
+# Execute the optimization function and then perform the expansion process on the optimized array.
 class OptimizeExpandService
-    # Função para otimizar e expandir as paradas de viagem
+    # Function to optimize and expand travel stops
     def self.optimizeAndExpand(id : Int32, api_data : Array(Location))
 
 

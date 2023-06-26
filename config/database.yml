@@ -1,6 +1,6 @@
-#Database configuration
+#Change those params if needed to match your database configuration.
 default: &default
-  host: localhost
+  host: database
   user: test
   password: test
   adapter: postgres

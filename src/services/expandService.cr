@@ -1,9 +1,9 @@
 require "json"
 require "./rickNMortyService.cr"
 
-#O array travel_stops recebido pela função é substituido pelos valores id, name,type e dimension contidos na variavel api_data. Após cada id do array travel_stops tiver o novo formato guardado na variavel expanded_stops, o objeto expanded_result é devolvido como resposta.
+# The 'travel_stops' array received by the function is replaced by the values of 'id', 'name', 'type', and 'dimension' contained in the 'api_data' variable. After each 'id' in the 'travel_stops' array has the new format stored in the 'expanded_stops' variable, the 'expanded_result' object is returned as the response.
 class ExpandService
-    # Função para expandir o array travel_stops
+    # Function to expand the 'travel_stops' array
     def self.onlyExpand(id : Int32, travel_stops : Array(Int32), api_data : Array(Location)): Hash(String, Array(Hash(String, Int32 | String)) | Int32)
     
         expanded_stops = travel_stops.map do |stop_id|
