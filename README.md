@@ -15,10 +15,19 @@ The objective of the API is to register travel plans using locations from the Ri
 - `Get(/travel_plans/:id)`:  to retrieve the plan with the specified ID.
 
 - `Post(/travel_plans)`: to save new plans. The request body is a JSON object like:
-{ "travel_stops": [1,2] }.
+    ```json
+    { 
+        "travel_stops": [1,2]
+    }
+    ```
 
 - `Put(/travel_plans/:id)`: to update the plan with the specified ID. The body is a JSON object like: 
-{ "travel_stops": [1,2] }.
+
+    ```json
+    { 
+        "travel_stops": [1,2,4,6]
+    }
+    ```
 
 - `Delete(/travel_plans/:id)`: to delete the plan with the specified ID.
 
