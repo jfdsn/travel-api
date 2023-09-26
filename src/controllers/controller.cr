@@ -1,6 +1,6 @@
 require "json"
 require "../services/service.cr"
-#TODO: implementar logica de otimize/expand consumindo a API externa
+
 class Controller
     #Retorna todos planos e verifica params de otimização/expandir
     def self.getTravelPlans(env : HTTP::Server::Context)

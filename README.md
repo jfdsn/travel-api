@@ -1,13 +1,12 @@
-<h1 align="center">Milenio Travel API</h1>
+<h1 align="center">Travel API</h1>
 
 <p align="center">
     <img src="https://img.shields.io/badge/crystal-v1.8.2-blue">
 </p>
 
 ## Description
-API developed for the Milenio Capital code challenge. It was built using Crystal, Kemal, Jennifer, and Postgres.
-
-Nota: A proposta inicial era de otimizar o resultado baseado em uma pesquisa graphql. Tentei bastante mas por falta de experiência acabei não conseguindo realizar o desafio da forma esperada. A função de otimizar até funciona mas acaba retornando valores diferentes do 'runtest' por ser baseado na quantidade de residents de cada localidade (Get em /localidades/:ids da api) e não pela 'popularidade' retirada do array de episodes na consulta graphql. 
+API developed for a code challenge built using Crystal, Kemal, Jennifer, and Postgres.
+The objective of the API is to register travel plans using locations from the Rick and Morty universe. In addition to registration, it's possible to retrieve the registered data and use optimization and expansion parameters to return organized results based on data present in the external "Rick and Morty API."
 
 ##  :hammer: Features
 
@@ -53,7 +52,6 @@ Please ensure that you have Docker properly installed on your local environment.
 - `Rick and Morty API`: https://rickandmortyapi.com/
 - `Kemal`: https://crystal-lang.org/reference/1.8/database/index.html
 - `Jennifer`: https://crystal-lang.org/reference/1.8/database/index.html
-- `Milenio Capital`: https://www.milenio.capital/
 
 ## :smile: Author
 
